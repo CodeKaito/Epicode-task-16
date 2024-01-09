@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.notifications-container {
+    background-color: rgb(232, 232, 232);
+}
+
+.hero-section {
+    background-color: #7451FE;
+}
+
+.banner-section {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    background-color: #FFEDDA;
+}
+
+.banner-icon {
+    color: #BA8874;
+}
+
+.description-container > span {
+    font-size: 13px;
+    color: #9b9b9b;
+}
+
+.carousel-control-next-icon {
+    color: #9b9b9b !important;
+}

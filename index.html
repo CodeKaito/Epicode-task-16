@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WebDev - Courses</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- Browse dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Landings dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Landings
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Accounts dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Notifications -->
+                    <div class="notifications-container mx-2 rounded-circle p-2">
+                        <i class="bi bi-bell text-dark p-1"></i>
+                    </div>
+
+                    <div class="user-logo-container m-2">
+                        <img src="/assets/avatar-1.jpg" height="50px" alt="user-logo" class="rounded-circle">
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero / Jumbotron -->
+        <section class="hero-section">
+            <!-- TODO: add some space for the description -->
+            <div class="container">
+                <div class="d-flex">
+                    <div class="jumbotron mt-5">
+                        <h1 class="display-4 text-light pt-3">Welcome Web Students!</h1>
+                        <p class="lead text-light">Hand-picked istructor and expertly crafted courses, designed for the modern students and entrepreneur</p>
+                        <p class="lead mt-5">
+                            <a class="btn btn-success btn-lg p-2" href="#" role="button">Browse Courses</a>
+                            <a class="btn btn-light btn-lg text-dark p-2" href="#" role="button">Are You Instructor?</a>
+                        </p>
+                    </div>
+                    <img src="/assets/hero-img.png" alt="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner under the hero section -->
+        <section class="banner-section p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <div class="video-container rounded-circle py-2 mx-3">
+                            <i class="bi banner-icon bi-camera-video p-3"></i>
+                        </div>
+                        <div class="description-container">
+                            <p>30,000 online courses</p>
+                            <span>Enjoy a variety of fresh topics</span>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="video-container rounded-circle py-2 mx-3">
+                            <i class="bi banner-icon bi-people p-3"></i>
+                        </div>
+                        <div class="description-container">
+                            <p>Expert instruction</p>
+                            <span>Find the right instructor for you</span>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <div class="video-container rounded-circle py-2 mx-3">
+                            <i class="bi banner-icon bi-clock p-3"></i>
+                        </div>
+                        <div class="description-container">
+                            <p>Lifetime access</p>
+                            <span>Learn on your schedule</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses sections -->
+        <section>
+            <section class="recommended mt-5">
+                <div class="container">
+                    <p>Recommended to you</p>
+                </div>
+                <div class="mt-2">
+                    <div id="multiCardCarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="card">
+                                <img src="/assets/course-graphql.jpg" class="card-img-top" alt="Image 1">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card 1</h5>
+                                  <p class="card-text">Some text for Card 1.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card">
+                                <img src="/assets/course-javascript.jpg" class="card-img-top" alt="Image 2">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card 2</h5>
+                                  <p class="card-text">Some text for Card 2.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card">
+                                <img src="/assets/course-node.jpg" class="card-img-top" alt="Image 3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card 3</h5>
+                                  <p class="card-text">Some text for Card 3.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-3">
+                              <div class="card">
+                                <img src="/assets/course-laravel.jpg" class="card-img-top" alt="Image 4">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card 4</h5>
+                                  <p class="card-text">Some text for Card 4.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Add more carousel items with card decks as needed -->
+                        <div class="carousel-item">
+                            <div class="row">
+                              <div class="col-3">
+                                <div class="card">
+                                  <img src="/assets/course-react.jpg" class="card-img-top" alt="Image 5">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card 5</h5>
+                                    <p class="card-text">Some text for Card 5.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Add more additional cards here -->
+                            </div>
+                          </div>
+                      </div>
+                  
+                      <a class="carousel-control-prev" href="#multiCardCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#multiCardCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+                      </a>
+                    </div>
+                  </div>
+            </section>
+        </section>
+        
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

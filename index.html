@@ -105,13 +105,14 @@
         <section class="hero-section">
             <!-- TODO: add some space for the description -->
             <div class="container">
-                <div class="d-flex">
+                <div class="d-md-block d-lg-flex">
                     <div class="jumbotron mt-5">
                         <h1 class="display-4 text-light pt-3">Welcome Web Students!</h1>
-                        <p class="lead text-light">Hand-picked istructor and expertly crafted courses, designed for the modern students and entrepreneur</p>
+                        <p class="lead text-light">Hand-picked istructor and expertly crafted courses, designed for the
+                            modern students and entrepreneur</p>
                         <p class="lead mt-5">
-                            <a class="btn btn-success btn-lg p-2" href="#" role="button">Browse Courses</a>
-                            <a class="btn btn-light btn-lg text-dark p-2" href="#" role="button">Are You Instructor?</a>
+                            <a class="btn btn-success btn-lg p-3 browse" href="#" role="button">Browse Courses</a>
+                            <a class="btn btn-light btn-lg text-dark p-3 instructor" href="#" role="button">Are You Instructor?</a>
                         </p>
                     </div>
                     <img src="/assets/hero-img.png" alt="hero-img">
@@ -123,7 +124,7 @@
         <section class="banner-section p-4">
             <div class="container">
                 <div class="row">
-                    <div class="col d-flex align-items-center">
+                    <div class="col-md-4 d-flex align-items-center mt-1">
                         <div class="video-container rounded-circle py-2 mx-3">
                             <i class="bi banner-icon bi-camera-video p-3"></i>
                         </div>
@@ -132,7 +133,7 @@
                             <span>Enjoy a variety of fresh topics</span>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center">
+                    <div class="col-md-4 d-flex align-items-center mt-1">
                         <div class="video-container rounded-circle py-2 mx-3">
                             <i class="bi banner-icon bi-people p-3"></i>
                         </div>
@@ -141,7 +142,7 @@
                             <span>Find the right instructor for you</span>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center">
+                    <div class="col-md-4 d-flex align-items-center mt-1">
                         <div class="video-container rounded-circle py-2 mx-3">
                             <i class="bi banner-icon bi-clock p-3"></i>
                         </div>
@@ -155,91 +156,243 @@
         </section>
 
         <!-- Courses sections -->
-        <!-- TODO: CONTINUA CAROSELLO -->
-        <section>
-            <section class="recommended mt-5">
-                <div class="container">
-                    <p>Recommended to you</p>
+        <!-- TODO: FINISCI CAROSELLO -->
+        <section class="courses-container">
+            <!-- RECOMMENDED SECTION -->
+            <section class="recommended">
+                <div class="container pt-5">
+                    <p class="lead">Recommended to you</p>
                 </div>
-                <div class="mt-2">
-                    <div id="multiCardCarousel" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active">
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="card">
-                                <img src="/assets/course-graphql.jpg" class="card-img-top" alt="Image 1">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card 1</h5>
-                                  <p class="card-text">Some text for Card 1.</p>
+                <div class="mt-2 container">
+                    <div id="carousel-recommended" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="card">
+                                            <img src="/assets/course-graphql.jpg" class="card-img-top" alt="Image 1">
+                                            <div class="card-body px-5 pt-4">
+                                                <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                                <div class="d-block d-xl-flex">
+                                                    <div class="d-flex">
+                                                        <i class="bi bi-clock"></i>
+                                                        <span class="mx-1">2h 40m</span>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class="bi bi-bar-chart-fill mx-2"></i>
+                                                        <span>Advance</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-block d-xl-flex text-warning mt-3">
+                                                    <div class="d-flex">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-half"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <i class="bi bi-star"></i>
+                                                        <span class="mx-2">2.5</span>
+                                                    </div>
+                                                    <span class="text-secondary">(1,500)</span>
+                                                </div>
+                                                <div class="d-flex mt-3">
+                                                    <p>$500</p>
+                                                    <span class="text-decoration-line-through text-secondary mx-2">$600</span>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle mx-3" src="/assets/avatar-5.jpg" height="20px" alt="avatar">
+                                                    <p>Brooklyn Simmons</p>
+                                                </div>
+                                                <i class="bi bi-bookmark mx-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="card">
+                                            <img src="/assets/course-javascript.jpg" class="card-img-top" alt="Image 2">
+                                            <div class="card-body px-5 pt-4">
+                                                <h6 class="card-title">A Complete Beginner's Guide to Javascript</h6>
+                                                <div class="d-block d-md-flex">
+                                                    <div class="flex">
+                                                        <i class="bi bi-clock"></i>
+                                                        <span class="mx-1">4h 10m</span>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <i class="bi bi-bar-chart-fill mx-2"></i>
+                                                        <span>Advance</span>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="d-flex text-warning mt-3">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <span class="mx-2">3.5</span>
+                                                    <span class="text-secondary mx-2">(7,500)</span>
+                                                </div>
+                                                <div class="d-flex mt-3">
+                                                    <p>$700</p>
+                                                    <span class="text-decoration-line-through text-secondary mx-2">$850</span>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle mx-3" src="/assets/avatar-1.jpg" height="20px" alt="avatar">
+                                                    <p>Jenny Wilson</p>
+                                                </div>
+                                                <i class="bi bi-bookmark mx-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="card">
+                                            <img src="/assets/course-node.jpg" class="card-img-top" alt="Image 3">
+                                            <div class="card-body px-5 pt-4">
+                                                <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                                                <div class="d-flex">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="mx-1">2h 10m</span>
+                                                    <i class="bi bi-bar-chart-fill mx-2"></i>
+                                                    <span>Intermediate</span>
+                                                </div>
+                                                <div class="d-flex text-warning mt-3">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star"></i>
+                                                    <span class="mx-2">4.0</span>
+                                                    <span class="text-secondary">(15,700)</span>
+                                                </div>
+                                                <div class="d-flex mt-3">
+                                                    <p>$800</p>
+                                                    <span class="text-decoration-line-through text-secondary mx-2">$950</span>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="rounded-circle mx-3" src="/assets/avatar-3.jpg" height="20px" alt="avatar">
+                                                    <p>Sina Ray</p>
+                                                </div>
+                                                <i class="bi bi-bookmark mx-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="card">
+                                            <img src="/assets/course-laravel.jpg" class="card-img-top" alt="Image 4">
+                                            <div class="card-body px-5 pt-4">
+                                                <h6 class="card-title">Laravel: The Ultimate Beginner's Guide To Learn</h6>
+                                                <div class="d-flex">
+                                                    <i class="bi bi-clock"></i>
+                                                    <span class="mx-1">1h 00m</span>
+                                                    <i class="bi bi-bar-chart-fill mx-2"></i>
+                                                    <span>Beginner</span>
+                                                </div>
+                                                <div class="d-flex text-warning mt-3">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-half"></i>
+                                                    <span class="mx-2">4.5</span>
+                                                    <span class="text-secondary">(2,500)</span>
+                                                </div>
+                                                <div class="d-flex mt-3">
+                                                    <p>$170</p>
+                                                    <span class="text-decoration-line-through text-secondary mx-2">$220</span>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <div class="d-flex">
+                                                    <img class="rounded-circle mx-3" src="/assets/avatar-5.jpg" height="20px" alt="avatar">
+                                                    <p>Brooklyn Simmons</p>
+                                                </div>
+                                                <i class="bi bi-bookmark mx-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                            <div class="col-3">
-                              <div class="card">
-                                <img src="/assets/course-javascript.jpg" class="card-img-top" alt="Image 2">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card 2</h5>
-                                  <p class="card-text">Some text for Card 2.</p>
+
+                            <!-- Add more carousel items with card decks as needed -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="card">
+                                            <img src="/assets/course-react.jpg" class="card-img-top" alt="Image 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card 5</h5>
+                                                <p class="card-text">Some text for Card 5.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add more additional cards here -->
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="/assets/course-wordpress.jpg" class="card-img-top" alt="Image 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card 5</h5>
+                                                <p class="card-text">Some text for Card 5.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <img src="/assets/course-css.jpg" class="card-img-top" alt="Image 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card 5</h5>
+                                                <p class="card-text">Some text for Card 5.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="card">
+                                            <img src="/assets/course-angular.jpg" class="card-img-top" alt="Image 5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card 5</h5>
+                                                <p class="card-text">Some text for Card 5.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                            <div class="col-3">
-                              <div class="card">
-                                <img src="/assets/course-node.jpg" class="card-img-top" alt="Image 3">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card 3</h5>
-                                  <p class="card-text">Some text for Card 3.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="card">
-                                <img src="/assets/course-laravel.jpg" class="card-img-top" alt="Image 4">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card 4</h5>
-                                  <p class="card-text">Some text for Card 4.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                  
-                        <!-- Add more carousel items with card decks as needed -->
-                        <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-3">
-                                <div class="card">
-                                  <img src="/assets/course-react.jpg" class="card-img-top" alt="Image 5">
-                                  <div class="card-body">
-                                    <h5 class="card-title">Card 5</h5>
-                                    <p class="card-text">Some text for Card 5.</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- Add more additional cards here -->
+
+                        <a class="carousel-control-prev" href="#carousel-recommended" role="button" data-slide="prev">
+                            <div class="prev-icon rounded-circle p-2">
+                                <i class="bi bi-chevron-left d-none d-sm-block"></i>
                             </div>
-                          </div>
-                      </div>
-                  
-                      <a class="carousel-control-prev" href="#multiCardCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      </a>
-                      <a class="carousel-control-next" href="#multiCardCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
-                      </a>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carousel-recommended" role="button" data-slide="next">
+                            <div class="next-icon rounded-circle p-2">
+                                <i class="bi bi-chevron-right d-none d-sm-block"></i>
+                            </div>
+                        </a>
+
                     </div>
-                  </div>
+                </div>
             </section>
+
+            <!-- MOST POPULAR SECTION -->
+            
         </section>
-        
+
     </main>
     <footer>
         <!-- place footer here -->
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

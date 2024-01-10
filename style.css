@@ -52,7 +52,7 @@ p {
     color: #9b9b9b;
 }
 
-.courses-container {
+.courses-container, body {
     background-color: #f2f2f2;
 }
 

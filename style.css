@@ -81,6 +81,10 @@ p {
     color: red;
 }
 
+.filled-icon:hover {
+    color: black;
+    font-size: 16px;
+}
 .bi-bookmark:hover {
     fill: grey;
     transition: fill .2s linear;
